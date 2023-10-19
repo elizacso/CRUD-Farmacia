@@ -1,9 +1,9 @@
 package com.farmacia.projetofarmacia.repository;
 
-import java.util.List;
+
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.query.Param;
+
 import org.springframework.stereotype.Repository;
 
 import com.farmacia.projetofarmacia.model.Produto;
@@ -12,6 +12,5 @@ import com.farmacia.projetofarmacia.model.Produto;
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long>{
 	
-	public List<Produto> findAllByNameContainingIgnoreCase(@Param("nome") String nome);
 	
 }
